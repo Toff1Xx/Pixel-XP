@@ -1,0 +1,21 @@
+﻿@page "/"
+@namespace Blazor_Pixel_XP.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    …
+    <!-- Bootstrap -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- Ваші стилі -->
+    <link href="app.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <app>
+        <component type="typeof(Blazor_Pixel_XP.App)" render-mode="ServerPrerendered" />
+    </app>
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

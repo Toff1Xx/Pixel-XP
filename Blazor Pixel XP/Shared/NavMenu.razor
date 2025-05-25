@@ -1,0 +1,17 @@
+﻿@namespace Blazor_Pixel_XP.Shared
+@using MudBlazor
+@using Microsoft.AspNetCore.Components.Authorization
+
+<CascadingAuthenticationState>
+    <MudNavMenu Elevation="1" Class="mud-width-250">
+        <MudNavLink Href="" Icon="@Icons.Material.Filled.Home">Головна</MudNavLink>
+        <MudNavLink Href="teams" Icon="@Icons.Material.Filled.Group">Команди</MudNavLink>
+        <MudNavLink Href="tournaments" Icon="@Icons.Material.Filled.SportsEsports">Турніри</MudNavLink>
+        <MudNavLink Href="stats" Icon="@Icons.Material.Filled.BarChart">Статистика</MudNavLink>
+
+        <MudNavGroup Title="Адмін" Icon="@Icons.Material.Filled.AdminPanelSettings">
+            <MudNavLink Href="admin/users" Icon="@Icons.Material.Filled.People">Користувачі</MudNavLink>
+            <MudNavLink Href="admin/create-tournament" Icon="@Icons.Material.Filled.AddCircle">Новий турнір</MudNavLink>
+        </MudNavGroup>
+    </MudNavMenu>
+</CascadingAuthenticationState>
